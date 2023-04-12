@@ -33,11 +33,10 @@ The DistilBERT-base-uncased model cannot directly process PDF documents, so we c
 In this step, we used [Adobe API](https://github.com/adobe/pdfservices-python-sdk-samples/tree/main/src/extractpdf) to extract all the context information and page information from PDF and saved into json files.
 
 <img width="588" alt="Screen Shot 2023-04-12 at 12 52 06 PM" src="https://user-images.githubusercontent.com/89158696/231547606-c774f7de-d104-48fe-a8bd-051afb20bb0a.png">
-<img width="423" alt="Screen Shot 2023-04-12 at 1 20 00 PM" src="https://user-images.githubusercontent.com/89158696/231566717-3e9724a4-c6ac-453b-985d-1f9d53a01051.png">
 
 Then, we transferred the json file into table, and each line saved a piece of context from the PDF document. Also, we truncated the long context information into separate smaller one.
 
-![Uploading Screen Shot 2023-04-12 at 1.20.00 PM.png…]()
+<img width="423" alt="Screen Shot 2023-04-12 at 1 20 00 PM" src="https://user-images.githubusercontent.com/89158696/231566717-3e9724a4-c6ac-453b-985d-1f9d53a01051.png">
 
 ### Step 2.
 
