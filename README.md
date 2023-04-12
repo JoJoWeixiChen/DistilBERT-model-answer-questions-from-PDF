@@ -73,7 +73,7 @@ There are two files.
 ## References
 
 ### Training Data
-
+[Train data](https://github.com/JoJoWeixiChen/DistilBERT-model-answer-questions-from-PDF/blob/main/train_data.csv)
 
 ### PDF Data
 1.	JetBlue [jb-2019-2020-esg-report.pdf (jetblue.com)](http://investor.jetblue.com/~/media/Files/J/Jetblue-IR-V2/Annual-Reports/jb-2019-2020-esg-report.pdf)
