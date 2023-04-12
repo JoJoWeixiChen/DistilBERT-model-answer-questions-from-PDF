@@ -7,7 +7,7 @@ Nowadays, with the help of ChatPDF, we are able to extract information from larg
 Extracting data from PDF documents was a time-consuming and tedious process, especially when the PDF documents are extremlly long. This often requires manual entry or the use of specialized software that may not always be accurate or reliable. However, with the application like ChatPDF and our model, users can get accurate answer from the PDF documents quickly.
 
 ### Project Objective
-Build a model pipeline based on [DistilBERT-base-uncased model](https://huggingface.co/distilbert-base-uncased) that can understand text-based questions and extract information from PDF documents and answer questions accurately.
+Build a model pipeline based on [DistilBERT-base-uncased model](https://huggingface.co/distilbert-base-uncased) that can understand text-based questions and extract information from PDF documents and answer questions accurately. Other than texts, there are often tables and graphs in PDF documents. This is project is only focusing on extracting answers from the text, not from graphs and tables.
 
 ## Data
 The data we used is the airline industry companies' Corporate and Social Responsibility (CSR) reports, including Delta, Jetblue, American Airlines, etc. We manually collected the training data online and annotated them to use for training the model. The title here is the keyword of the questions. The Context is the paragraph from the pdf document that contains the answer for the question. The questions is slef-defined based on the context as well as the answer. This is the training data for the model.
