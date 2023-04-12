@@ -26,10 +26,15 @@ As for the DistilBERT-base-uncased model, it's an uncased version of DistilBERT 
 The DistilBERT-base-uncased model cannot directly process PDF documents, so we create a pipeline to precess the data and get the answers. The model pipeline including several steps:
 
 ### Step 1. Extract data from PDF documents
-In this step, we used [Adobe API](https://github.com/adobe/pdfservices-python-sdk-samples/tree/main/src/extractpdf) to read through the PDF documents and get .json file that includes all the context information and page information.
+In this step, we used [Adobe API](https://github.com/adobe/pdfservices-python-sdk-samples/tree/main/src/extractpdf) to extract all the context information and page information from the PDF document and saved into a .json file.
 
 <img width="588" alt="Screen Shot 2023-04-12 at 12 52 06 PM" src="https://user-images.githubusercontent.com/89158696/231547606-c774f7de-d104-48fe-a8bd-051afb20bb0a.png">
 
+Then, we transferred the .json file into the table format. In the table, each line represents a piece of context from the PDF document. Also, we truncated the long paragraph context into smaller one to make sure that all context information can be processed by the model.
+
+<img width="423" alt="Screen Shot 2023-04-12 at 1 20 00 PM" src="https://user-images.githubusercontent.com/89158696/231549507-f651f28c-4ac3-43e3-8c80-c31c40e0cbc4.png">
+
+### Step 2. Calcualte
 
 ## Critical analysis
 - This project revels part of the process of how ChatPDF works. The difference here is that ChatPDF has been trained with a lot of different types of pdf while this DitilBERT model was only retrained with Corporate and social responsibility (CSR) reports data.
