@@ -12,7 +12,8 @@ Build a model pipeline based on [DistilBERT-base-uncased model](https://huggingf
 ## Data
 The data we used is the airline industry companies' Corporate and Social Responsibility (CSR) reports, including Delta, Jetblue, American Airlines, etc. 
 
-[train_data.pdf](https://github.com/JoJoWeixiChen/DistilBERT-model-answer-questions-from-PDF/files/11215752/train_data.pdf)
+<img width="1310" alt="Screen Shot 2023-04-12 at 1 34 26 PM" src="https://user-images.githubusercontent.com/89158696/231579346-638de1fd-d5c0-4d83-9133-ee6b7bda55d2.png">
+
 
 ## Model
 The model we used is [DistilBERT-base-uncased model](https://huggingface.co/distilbert-base-uncased).
