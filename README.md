@@ -50,6 +50,12 @@ Second, `domain adaptation` we wrote down 500 pieces of annotations as training 
 
 Third, `testing` we got 77% accuracy to all kinds of answers (including questions that have text answers, questions that have numerical answers, and questions that don't have answers in the PDF document). Remarkably, we can accurately answer 93.4% questions that have numerical answers.
 
+### Step 4. Product
+We prepare to create a user interface in the future, which allows user to input the PDF and questions and can directly get the answers.
+
+<img width="992" alt="Screen Shot 2023-04-12 at 3 12 13 PM" src="https://user-images.githubusercontent.com/89158696/231576579-aae52616-66c1-4dcb-ae05-0c3d3a92163b.png">
+
+
 ## Critical analysis
 - This project revels part of the process of how ChatPDF works. The difference here is that ChatPDF has been trained with a lot of different types of pdf while this DitilBERT model was only retrained with Corporate and social responsibility (CSR) reports data.
 - For the next step, we can increase the diversity of the training data so that the model will be able to process different types of pdf and answer all kinds of questions.
