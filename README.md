@@ -93,3 +93,5 @@ There are two files.
 DistilBERT-base-uncased model: https://huggingface.co/distilbert-base-uncased
 
 ## Viedo link
+
+- [Project Overview Video Link](https://github.com/JoJoWeixiChen/DistilBERT-model-answer-questions-from-PDF/tree/main/Video%20Link)
