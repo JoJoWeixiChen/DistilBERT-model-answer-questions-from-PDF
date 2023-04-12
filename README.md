@@ -4,13 +4,13 @@
 Nowadays, with the help of ChatPDF, we are able to extract information from large PDF documents easily. However, despite its effectiveness, the inner workings of this tool remain a mystery to most. Therefore, the purpose of this project is to shed light on the workings of ChatPDF, specifically in relation to its application in answering questions from airline industry companies' Corporate and Social Responsibility (CSR) reports.
 
 ### Problem
-Extracting data from PDF documents was a time-consuming and tedious process, often requiring manual entry or the use of specialized software that may not always be accurate or reliable. With this application, users can get accurate answer quickly.
+Extracting data from PDF documents was a time-consuming and tedious process, especially when the PDF documents are extremlly long. This often requires manual entry or the use of specialized software that may not always be accurate or reliable. However, with the application like ChatPDF and our model, users can get accurate answer from the PDF documents quickly.
 
 ### Project Objective
-Build a model pipeline based on [DistilBERT-base-uncased model](https://huggingface.co/distilbert-base-uncased) that can extract information from PDF documents and answer related questions accurately.
+Build a model pipeline based on [DistilBERT-base-uncased model](https://huggingface.co/distilbert-base-uncased) that can understand text-based questions and extract information from PDF documents and answer questions accurately.
 
 ## Data
-The data we used is the airline industry companies' Corporate and Social Responsibility (CSR) reports, including Delta, Jetblue, American Airlines, etc.
+The data we used is the airline industry companies' Corporate and Social Responsibility (CSR) reports, including Delta, Jetblue, American Airlines, etc. 
 
 ## Model
 The model we used is [DistilBERT-base-uncased model](https://huggingface.co/distilbert-base-uncased).
@@ -30,15 +30,10 @@ For the fine-tuned version of model, once we provided the questions and contexts
 The DistilBERT-base-uncased model cannot directly process PDF documents, so we create a pipeline to precess the data and get the answers. The model pipeline including several steps:
 
 ### Step 1. Extract data from PDF documents
-In this step, we used [Adobe API](https://github.com/adobe/pdfservices-python-sdk-samples/tree/main/src/extractpdf) to extract all the context information and page information from the PDF document and saved into a .json file.
+In this step, we used [Adobe API](https://github.com/adobe/pdfservices-python-sdk-samples/tree/main/src/extractpdf) to read through the PDF documents and get .json file that includes all the context information and page information.
 
 <img width="588" alt="Screen Shot 2023-04-12 at 12 52 06 PM" src="https://user-images.githubusercontent.com/89158696/231547606-c774f7de-d104-48fe-a8bd-051afb20bb0a.png">
 
-Then, we transferred the .json file into the table format. In the table, each line represents a piece of context from the PDF document. Also, we truncated the long paragraph context into smaller one to make sure that all context information can be processed by the model.
-
-<img width="423" alt="Screen Shot 2023-04-12 at 1 20 00 PM" src="https://user-images.githubusercontent.com/89158696/231549507-f651f28c-4ac3-43e3-8c80-c31c40e0cbc4.png">
-
-### Step 2. Calcualte
 
 ## Critical analysis
 - This project revels part of the process of how ChatPDF works. The difference here is that ChatPDF has been trained with a lot of different types of pdf while this DitilBERT model was only retrained with Corporate and social responsibility (CSR) reports data.
