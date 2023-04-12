@@ -61,6 +61,11 @@ We prepare to create a user interface in the future, which allows user to input 
 - For the next step, we can increase the diversity of the training data so that the model will be able to process different types of pdf and answer all kinds of questions.
 
 ## Code demonstration
+There are two files.
+
+`model.ipynb` The main function we used
+
+`extract_issue5.py` The function to extract information from PDF and save in json file.
 
 ## References
 
