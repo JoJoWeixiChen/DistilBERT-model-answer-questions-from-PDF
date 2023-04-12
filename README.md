@@ -10,7 +10,7 @@ Extracting data from PDF documents was a time-consuming and tedious process, esp
 Build a model pipeline based on [DistilBERT-base-uncased model](https://huggingface.co/distilbert-base-uncased) that can understand text-based questions and extract information from PDF documents and answer questions accurately.
 
 ## Data
-The data we used is the airline industry companies' Corporate and Social Responsibility (CSR) reports, including Delta, Jetblue, American Airlines, etc. 
+The data we used is the airline industry companies' Corporate and Social Responsibility (CSR) reports, including Delta, Jetblue, American Airlines, etc. We manually collected the training data online and annotated them to use for training the model. The title here is the keyword of the questions. The Context is the paragraph from the pdf document that contains the answer for the question. The questions is slef-defined based on the context as well as the answer. This is the training data for the model.
 
 <img width="1310" alt="Screen Shot 2023-04-12 at 1 34 26 PM" src="https://user-images.githubusercontent.com/89158696/231579346-638de1fd-d5c0-4d83-9133-ee6b7bda55d2.png">
 
