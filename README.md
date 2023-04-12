@@ -20,13 +20,11 @@ The model we used is [DistilBERT-base-uncased model](https://huggingface.co/dist
 
 DistilBERT model is a distilled form of the BERT model. As we can see from the above architecture plot, the distilBERT model adds a knowledge distillation process to reduce the number of transformer layers and the size of each layer. Thus, the DistilBERT model requires less size of datasets and computational resources to train, which is friendly for personal laptops. Although the distilBERT model reduces the size of BERT model by 40%, the distilBERT model still retains 97% of BERT's language understanging abilities and being 60% faster than the BERT model.
 
-As for the DistilBERT-base-uncased model, it's an uncased version of DistilBERT model. In another words, there is no diference between 'english' and 'English' for this model.
-
-And the DistilBERT-base-uncased model is primarily aimed at being fine-tuned on tasks that use the whole sentence (potentially masked) to make decisions, such as sequence classification, token classification or question answering. But for text generation tasks, the GPT model has better performance. Considering that our main task is question answering, we chose the DistilBERT-base-uncased model.
-
-
+As for the DistilBERT-base-uncased model, it's an uncased version of DistilBERT model. In another words, there is no diference between 'english' and 'English' for this model. And the DistilBERT-base-uncased model is primarily aimed at being fine-tuned on tasks that use the whole sentence (potentially masked) to make decisions, such as sequence classification, token classification or question answering. But for text generation tasks, the GPT model has better performance. Considering that our main task is question answering, we chose the DistilBERT-base-uncased model.
 
 ## Pipeline
+The DistilBERT-base-uncased model cannot directly process PDF documents, so we create a pipeline to precess the data and get the answers. The model pipeline including several steps:
+
 
 ## Critical analysis
 - This project revels part of the process of how ChatPDF works. The difference here is that ChatPDF has been trained with a lot of different types of pdf while this DitilBERT model was only retrained with Corporate and social responsibility (CSR) reports data.
