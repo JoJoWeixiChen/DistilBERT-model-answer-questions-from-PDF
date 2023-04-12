@@ -72,8 +72,24 @@ There are two files.
 
 ## References
 
-### Data
+### Training Data
+
+
+### PDF Data
+1.	JetBlue [jb-2019-2020-esg-report.pdf (jetblue.com)](http://investor.jetblue.com/~/media/Files/J/Jetblue-IR-V2/Annual-Reports/jb-2019-2020-esg-report.pdf)
+2.	Southwest https://www.southwest.com/assets/pdfs/communications/one-reports/2021_Southwest_One_Report_2022-04-22.pdf
+3.	Citizen [2021-corporate_responsibility.pdf (citizensbank.com)](https://www.citizensbank.com/assets/pdf/2021-corporate_responsibility.pdf)
+4.	[Delta ESG Report 2021 (delta.com)](https://esghub.delta.com/esg-report-2021)
+5.	Ryanair  https://corporate.ryanair.com/sustainability-report-2021/ 
+6.	AA [American Airlines - 2021 ESG Report](https://www.americanairlines.it/content/images/customer-service/about-us/corporate-governance/esg/aag-esg-report-2021.pdf)
+7.	Cathay Pacific [Cathay_Pacific_SDR_2021_EN_Final.pdf (cathaypacific.com)](https://sustainability.cathaypacific.com/wp-content/uploads/2022/05/Cathay_Pacific_SDR_2021_EN_Final.pdf)
+8.	Alaska Airline: https://sitecore-prod-cd-westus2.azurewebsites.net/-/media/5C9AD40027274CCA962DDAF60F7EA2E4 
+9.	United Airline https://crreport.united.com/data/environment 
+10.	LH [LH-Factsheet-Sustainability-2021.pdf (lufthansagroup.com)](https://www.lufthansagroup.com/media/downloads/en/responsibility/LH-Factsheet-Sustainability-2021.pdf)
+11.	Qantas https://investor.qantas.com/FormBuilder/_Resource/_module/doLLG5ufYkCyEPjF1tpgyw/file/annual-reports/QAN_2022_Sustainability_Report.pdf 
+12.	International Airline https://www.iairgroup.com/~/media/Files/I/IAG/documents/sustainability/sustainability-report-2021.pdf
 
 ### Hugginface model
+DistilBERT-base-uncased model: https://huggingface.co/distilbert-base-uncased
 
 ## Viedo link
