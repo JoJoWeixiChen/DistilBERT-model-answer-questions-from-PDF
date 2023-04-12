@@ -38,7 +38,17 @@ Then, we transferred the json file into table, and each line saved a piece of co
 
 <img width="423" alt="Screen Shot 2023-04-12 at 1 20 00 PM" src="https://user-images.githubusercontent.com/89158696/231566717-3e9724a4-c6ac-453b-985d-1f9d53a01051.png">
 
-### Step 2.
+### Step 2. Calculate semantic relevancy score
+In this step, we calculated the semantic relevancy score between each small pieces of contexts we just got in step 1 and the questions. Then we can get the most relevant contexts and get answers from the contexts. To achieve this, we set a threshold for this step. If there are more than three pieces of contexts that have relevancy score higher than the threshold, we will use all the three contexts to provide final answers; otherwise we will use the most relevant context to get the answer.
+
+<img width="562" alt="Screen Shot 2023-04-12 at 2 44 02 PM" src="https://user-images.githubusercontent.com/89158696/231567815-ad7da49c-b7f8-461f-9031-f665b134b7ce.png">
+
+### Step 3. Model
+First, `fine-tuning` we fine-tuned this model on [SQuAD2](https://rajpurkar.github.io/SQuAD-explorer/) dataset, so that the model can be used for question-answering tasks.
+
+Second, `domain adaptation` we wrote down 500 pieces of annotations as training dataset to train the model and improve the model's performance on answering questions about airline industry companies' Corporate and Social Responsibility (CSR) reports.
+
+Third, `testing` we got 77% accuracy to all kinds of answers (including questions that have text answers, questions that have numerical answers, and questions that don't have answers in the PDF document). Remarkably, we can accurately answer 93.4% questions that have numerical answers.
 
 ## Critical analysis
 - This project revels part of the process of how ChatPDF works. The difference here is that ChatPDF has been trained with a lot of different types of pdf while this DitilBERT model was only retrained with Corporate and social responsibility (CSR) reports data.
