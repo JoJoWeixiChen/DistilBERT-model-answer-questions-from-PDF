@@ -42,7 +42,15 @@ Then, we transferred the json file into table, and each line saved a piece of co
 <img width="423" alt="Screen Shot 2023-04-12 at 1 20 00 PM" src="https://user-images.githubusercontent.com/89158696/231566717-3e9724a4-c6ac-453b-985d-1f9d53a01051.png">
 
 ### Step 2. Calculate semantic relevancy score
-In this step, we used the sentence transformer model [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) to calculate the semantic relevancy score between each small pieces of contexts we just got in step 1 and the questions. The all-MiniLM-L6-v2 model can map sentences & paragraphs to a 384 dimensional dense vector space to calculate their semantic relevancy score. Then we can get the most relevant contexts and get answers from the contexts. To achieve this, we set a threshold for this step. If there are more than three pieces of contexts that have relevancy score higher than the threshold, we will use all the three contexts to provide final answers; otherwise we will use the most relevant context to get the answer.
+In this step, we used the sentence transformer model [all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) to calculate the semantic relevancy score between each small pieces of contexts we just got in step 1 and the questions. The all-MiniLM-L6-v2 model can map sentences & paragraphs to a 384 dimensional dense vector space to calculate their semantic relevancy score. 
+
+After getting the relevancy score between all context pieces and the questions, we set a threshold to select the potential contexts that may include the answers. 
+
+If there are more than three pieces of contexts that have relevancy score higher than the threshold, we will use the contexts with top three relevancy score for predicting final answer; 
+
+If there is just one piece of context that has relevancy score higher than the threshold, we will use the most relevant context to predict the answer.
+
+Otherwise, we will return a feedback as 'No answer exists'.
 
 <img width="562" alt="Screen Shot 2023-04-12 at 2 44 02 PM" src="https://user-images.githubusercontent.com/89158696/231567815-ad7da49c-b7f8-461f-9031-f665b134b7ce.png">
 
