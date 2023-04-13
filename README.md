@@ -67,11 +67,11 @@ We prepare to create a user interface in the future, which allows user to input 
 <img width="992" alt="Screen Shot 2023-04-12 at 3 12 13 PM" src="https://user-images.githubusercontent.com/89158696/231576579-aae52616-66c1-4dcb-ae05-0c3d3a92163b.png">
 
 
-## Critical analysis
+## Critical thinking
 - This project revels part of the process of how ChatPDF works. The difference here is that ChatPDF has been trained with a lot of different types of pdf while this DitilBERT model was only retrained with Corporate and social responsibility (CSR) reports data.
 - For the next step, we can increase the diversity of the training data so that the model will be able to process different types of pdf and answer all kinds of questions.
 
-## Code demonstration
+## Code
 There are two files.
 
 `model.ipynb` The main function we used
@@ -103,3 +103,7 @@ DistilBERT-base-uncased model: https://huggingface.co/distilbert-base-uncased
 ## Viedo link
 
 - [Project Overview Video Link](https://github.com/JoJoWeixiChen/DistilBERT-model-answer-questions-from-PDF/tree/main/Video%20Link) 
+
+# Thanks
+[Anubha](https://github.com/Anubha101)
+[Jingting](https://github.com/Jingting723)
