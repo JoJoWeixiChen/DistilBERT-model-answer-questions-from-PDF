@@ -59,7 +59,7 @@ First, `fine-tuning` we fine-tuned this model on [SQuAD2](https://rajpurkar.gith
 
 Second, `domain adaptation` we wrote down 500 pieces of annotations as training dataset to train the model and improve the model's performance on answering questions about airline industry companies' Corporate and Social Responsibility (CSR) reports.
 
-Third, `testing` we got 77% accuracy to all kinds of answers (including questions that have text answers, questions that have numerical answers, and questions that don't have answers in the PDF document). Remarkably, we can accurately answer 93.4% questions that have numerical answers.
+Third, `testing` we got 77% accuracy to answer all kinds of questions (including questions that have text answers, questions that have numerical answers, and questions that don't have answers in the PDF document). Remarkably, we can accurately answer 93.4% questions that have numerical answers.
 
 ### Step 4. Product
 We prepare to create a user interface in the future, which allows user to input the PDF and questions and can directly get the answers.
